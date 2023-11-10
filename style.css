@@ -105,34 +105,42 @@ body {
 
 .attributes {
     background-color: white;
-    padding: 25px 100px 25px 100px;
-    justify-content: center;
-    align-content: center;
+    padding: 25px 160px 25px 160px;
     display: flex;
-    flex-direction: row;
-}
-
-.attributes img {
-    height: 120px;
-    width: 120px;
-    border-radius: 10px;
-    align-self: center;
-    border: 2px solid #3882F6;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 .attributesbox {
-    display:flex;
-    flex-direction: column;
+    flex: 1 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: top;
 }
 
 .attributeitem {
-    flex:auto;
-    width: 25%;
+    flex: 1 1 25%;
+    flex-flow: row nowrap;
+    justify-content: top;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.attributes img {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #3882F6;
 }
 
 .attributeitem p {
-    padding: 0px 10px 0px 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
+
 
 /*
 class="quote"
@@ -144,7 +152,7 @@ class="footer"
 
 .quote {
     background-color:#E5E7EB;
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px 100px 100px;
     color:#1f2937;
     font-size: 24px;
     font-weight: lighter;
@@ -160,26 +168,36 @@ class="footer"
 
 .actioncall {
     padding: 50px 100px 50px 100px;
-    background-color: #3882F6;
+    background-color: white;
 }
 
 .actionbox {
-    display: flex;
+    padding: 20px 60px 20px 60px;
+    border-radius: 5px;
+    background-color: #3882F6;
 }
 
 .actiontext {
-    flex: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .actionbox button {
-    flex: auto;
-    width: 100px;
+    width: 160px;
     height: 50px;
-    background-color: #2aaf3c;
-    border-radius: 8px;
-    border: 5px solid #141b24;
+    background-color: #3882F6;
+    border-radius: 3px;
+    border: 3px solid #1f2937;
     font-size: 16px;
     font-weight: bold;
+}
+
+.actionbox button:hover {
+    background-color: #1f2937;
+    border: 3px solid #3882F6;
+    color:white;
 }
 
 .footer {
