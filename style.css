@@ -1,0 +1,193 @@
+/*
+class="menubar"
+class="menubarlogo"
+class="menubarlinks"
+class="hero"
+class="herotext"
+class="heroimage"><img src="images/ninja-head.png"
+class="attributes"
+class="attributesbox"
+class="attributeitem"
+class="attributeitem"
+class="attributeitem"
+class="attributeitem"
+class="quote"
+class="actioncall"
+class="actionbox"
+class="actiontext"
+class="footer"
+*/
+
+* {
+    font-family: 'Roboto', 'Verdana', sans-serif;
+
+}
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.mainflex {
+    display: flex;
+}
+
+.gutter {
+    width: 20%;
+    flex:auto;
+    background-color: #141b24;
+}
+
+.content {
+    width: 80%;
+    flex: auto;
+}
+
+
+.menubar {
+    display:flex;
+    height: 60px;
+    color:#E5E7EB;
+    background-color: #1f2937;
+    box-shadow: inset;
+    padding: 20px 100px 20px 100px;
+}
+.menubarlogo {
+    flex: auto;
+    width: 400px;
+}
+
+.menubarlogo img {
+    height: 40px;
+    width: 40px;
+    border-radius:20px;
+}
+
+.menubarlinks {
+    flex: auto;
+}
+
+.menubarlinks a {
+    text-decoration: none;
+    color:#f9faf8;
+}
+
+.hero {
+    color: #E5E7EB;
+    display: flex;
+    background-color: #1f2937;
+    padding: 25px 100px 70px 100px;
+}
+
+.herotext {
+    flex:1;
+}
+
+.herotext h1 {
+    font-weight: bolder;
+    font-size: 48px;
+    color: #f9faf8;
+}
+
+.herotext p {
+    color: #E5E7EB;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 10px;
+    padding-right: 50px
+}
+
+.hero img {
+    flex:none;
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.attributes {
+    background-color: white;
+    padding: 25px 100px 25px 100px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.attributes img {
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    align-self: center;
+    border: 2px solid #3882F6;
+}
+
+.attributesbox {
+    display:flex;
+    flex-direction: column;
+}
+
+.attributeitem {
+    flex:auto;
+    width: 25%;
+}
+
+.attributeitem p {
+    padding: 0px 10px 0px 10px;
+}
+
+/*
+class="quote"
+class="actioncall"
+class="actionbox"
+class="actiontext"
+class="footer"
+*/
+
+.quote {
+    background-color:#E5E7EB;
+    padding: 50px 100px 50px 100px;
+    color:#1f2937;
+    font-size: 24px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.quoteauthor {
+    float:right;
+    font-weight: 800;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.actioncall {
+    padding: 50px 100px 50px 100px;
+    background-color: #3882F6;
+}
+
+.actionbox {
+    display: flex;
+}
+
+.actiontext {
+    flex: auto;
+}
+
+.actionbox button {
+    flex: auto;
+    width: 100px;
+    height: 50px;
+    background-color: #2aaf3c;
+    border-radius: 8px;
+    border: 5px solid #141b24;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #E5E7EB;
+    align-items: center;
+    height: 40px;
+    padding: 20px 100px 20px 100px;
+    justify-content: center;
+    display: flex;
+}
