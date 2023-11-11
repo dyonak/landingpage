@@ -45,29 +45,38 @@ body {
 
 .menubar {
     display:flex;
-    height: 60px;
     color:#E5E7EB;
     background-color: #1f2937;
-    padding: 20px 100px 20px 100px;
+    border-bottom: 2px solid #1e324d;
 }
 .menubarlogo {
     flex: auto;
-    width: 400px;
 }
 
 .menubarlogo img {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     border-radius:20px;
+    margin: 15px;
 }
 
 .menubarlinks {
-    flex: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .menubarlinks a {
     text-decoration: none;
+    padding: 30px;
     color:#f9faf8;
+    border-left: 2px solid #1e324d;
+}
+
+.menubarlinks a:hover {
+    color:#f9faf8;
+    background-color: #141b24;
 }
 
 .hero {
@@ -104,13 +113,14 @@ body {
 
 .attributes {
     background-color: white;
-    padding: 25px 160px 25px 160px;
+    padding: 25px 160px 75px 160px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
 .attributesbox {
+    padding-top: 25px;
     flex: 1 0 0;
     display: flex;
     flex-flow: row nowrap;
@@ -143,6 +153,7 @@ body {
 
 .attributeitem p {
     text-align: center;
+    margin: 10px;
 }
 
 
