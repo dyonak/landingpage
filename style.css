@@ -44,7 +44,9 @@ body {
 
 
 .menubar {
-    display:flex;
+    position: sticky;
+    top: 0;
+    display: flex;
     color:#E5E7EB;
     background-color: #1f2937;
     border-bottom: 2px solid #1e324d;
@@ -187,7 +189,7 @@ class="footer"
 }
 
 .actionbox {
-    padding: 20px 60px 20px 60px;
+    padding: 30px 60px 50px 60px;
     border-radius: 5px;
     background-color: #3882F6;
 }
@@ -197,22 +199,27 @@ class="footer"
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    font-size: larger;
 }
 
+.actionbox form {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionbox input {
+    height: 42px;
+    width: 100%;
+    font-size: 24px;
+}
 .actionbox button {
     width: 160px;
     height: 50px;
-    background-color: #3882F6;
-    border-radius: 3px;
-    border: 3px solid #1f2937;
     font-size: 16px;
+    background-color: #00c70a;
     font-weight: bold;
-}
-
-.actionbox button:hover {
-    background-color: #1f2937;
-    border: 3px solid #3882F6;
-    color:white;
 }
 
 .footer {
