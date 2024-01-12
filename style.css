@@ -29,6 +29,7 @@ body {
 
 .mainflex {
     display: flex;
+
 }
 
 .gutter {
@@ -114,7 +115,7 @@ body {
 }
 
 .attributes {
-    background-color: white;
+    background-color:#E5E7EB;
     padding: 25px 160px 75px 160px;
     display: flex;
     flex-flow: column nowrap;
@@ -168,7 +169,6 @@ class="footer"
 */
 
 .quote {
-    background-color:#E5E7EB;
     padding: 50px 100px 100px 100px;
     color:#1f2937;
     font-size: 24px;
@@ -184,22 +184,29 @@ class="footer"
 }
 
 .actioncall {
-    padding: 50px 100px 50px 100px;
-    background-color: white;
+    position: sticky;
+    top: 70px;
+    padding: 30px 200px 30px 200px;
+
 }
 
 .actionbox {
-    padding: 30px 60px 50px 60px;
+    padding: 10px 30px 20px 30px;
     border-radius: 10px;
     background-color: #3882F6;
 }
 
+.actionbox h3 {
+    padding: 0px;
+    margin: 0px;
+    margin-top:10px;
+}
 .actiontext {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    font-size: larger;
+
 }
 
 .actionbox form {
